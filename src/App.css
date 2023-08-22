@@ -1,42 +1,96 @@
 #root {
-  max-width: 1280px;
+  max-width: 1200px;
   margin: 0 auto;
   padding: 2rem;
   text-align: center;
 }
 
-.logo {
-  height: 6em;
-  padding: 1.5em;
-  will-change: filter;
-  transition: filter 300ms;
-}
-.logo:hover {
-  filter: drop-shadow(0 0 2em #646cffaa);
-}
-.logo.react:hover {
-  filter: drop-shadow(0 0 2em #61dafbaa);
+.container-tabla {
+  display: flex;
+  justify-content: center;
+  text-align: left;
+  margin-top: 25px;
+  margin-bottom: 100px;
 }
 
-@keyframes logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.tabla {
+  width: 900px;
+  border: solid 1px black;
+  margin: 0px;
+  border-collapse: collapse;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  a:nth-of-type(2) .logo {
-    animation: logo-spin infinite 20s linear;
-  }
+.tabla thead {
+  display: table-header-group;
+  background-color: grey;
+  font-size: 1.2em;
+  text-align: center;
 }
 
-.card {
-  padding: 2em;
+.tabla th {
+  padding: 10px;
+  border: solid 1px black;
 }
 
-.read-the-docs {
-  color: #888;
+.tabla td {
+  border: solid 1px black;
+  padding: 10px;
+}
+
+/* Estilos para filas impares (opcional) */
+.tabla tbody tr:nth-child(odd) {
+  background-color: #c9c8c8;
+}
+
+.tabla tr:hover,
+.tabla tr:nth-child(odd):hover {
+  background-color: rgb(161, 46, 46);
+}
+
+.tabla img {
+  width: 100px;
+}
+a {
+  font-weight: 500;
+  color: #646cff;
+  text-decoration: inherit;
+}
+a:hover {
+  color: #535bf2;
+}
+
+h1 {
+  font-size: 3.2em;
+  line-height: 1.1;
+}
+
+button {
+  border-radius: 8px;
+  border: 1px solid transparent;
+  padding: 0.6em 1.2em;
+  font-size: 1em;
+  font-weight: bold;
+  font-family: inherit;
+  background-color: #a65e00;
+  cursor: pointer;
+  transition: border-color 0.25s;
+  color: white;
+  border-color: #000000;
+  margin-left: 10px;
+}
+
+button:hover {
+  background-color: #942304;
+}
+button:focus,
+button:focus-visible {
+  outline: 4px auto -webkit-focus-ring-color;
+}
+
+.btn-elimina {
+  background-color: #910303;
+}
+
+.btn-elimina:hover {
+  background-color: #000000;
 }
